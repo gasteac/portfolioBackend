@@ -10,12 +10,17 @@
         "src": "/(.*)",
         "dest": "/",
         "methods": [
-            "POST"
+            "GET",
+            "POST",
+            "PUT",
+            "DELETE",
+            "PATCH",
+            "OPTIONS"
         ],
         "headers": {
             "Access-Control-Allow-Origin": "https://gasteac.com, https://portfolio-frontend-gasteacs-projects.vercel.app",
             "Access-Control-Allow-Methods": "POST",
-            "Access-Control-Allow-Headers": "Content-Type,"
+            "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Accept, Origin, Authorization"
         }
     }
 ]
