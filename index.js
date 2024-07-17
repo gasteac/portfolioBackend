@@ -9,7 +9,10 @@ mongoose.connect(process.env.DB_CNN).then(console.log("Connected to MongoDB")).c
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: 'https://gasteac.com',
+  credentials: true
+}));
 app.use("/api/form", sendMessage);
 app.listen(process.env.PORT, () => {
   console.log(`Running at port ${process.env.PORT}`);
