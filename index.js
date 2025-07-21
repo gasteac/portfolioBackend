@@ -17,7 +17,7 @@ sequelize.authenticate()
 const app = express();
 app.use(express.json());
 app.use(cors({
-  origin: ['http://localhost:5174', 'https://gasteac.com'],
+  origin: ['https://gasteac.com'],
   credentials: true
 }));
 app.use("/api/form", messageRouter);
