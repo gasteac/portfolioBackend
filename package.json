@@ -17,7 +17,9 @@
     "express": "^4.17.1",
     "express-validator": "^6.5.0",
     "mongoose": "^8.3.4",
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.1.0",
+    "pg": "^8.16.3",
+    "sequelize": "^6.37.7"
   },
   "devDependencies": {
     "web-vitals": "^4.0.0"

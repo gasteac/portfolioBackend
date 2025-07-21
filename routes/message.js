@@ -1,7 +1,7 @@
-const {Router} = require('express');
-const {check} = require('express-validator');
-const {fieldValidator} = require('../middlewares/fieldValidator');
-const {sendMessage} = require('../controllers/message');
+import { Router } from 'express';
+import { check } from 'express-validator';
+import { fieldValidator } from '../middlewares/fieldValidator.js';
+import { sendMessage } from '../controllers/message.js';
 
 const router = Router();
 
@@ -14,4 +14,4 @@ router.post('/new',[
     fieldValidator
 ], sendMessage);
 
-module.exports = router;
+export default router;
